@@ -1,0 +1,113 @@
+
+\documentclass[a4paper]{article}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{multirow}
+\begin{document}
+\begin{center}
+    \begin{LARGE}
+    MY FIRST \LaTeX DOCUMENT
+    \end{LARGE}
+\end{center} \hline
+\section{ENUMERATE}
+\begin{enumerate}
+    \item Get Organized. Making a plan for what you're going to do and when you're going to do it will make sure you're always ahead of the curve - literally. 
+    \item Don't multitask. Studies have shown that multitasking is physically impossible. 
+    \item Divide it up. Studying isn't fun to begin with, and forcing yourself through a study marathon will only make it worse. Dividing your work into manageable chunks and rewarding yourself when you finish each chunk will make studying (more) fun.
+\end{enumerate}
+\section{ITEMIZE}
+\begin{itemize}
+    \item Sleep. Don't underestimate the importance of those eight hours of zzz's every night! Getting a good night's rest will sharpen your focus and improve your working memory.
+    \item Set a schedule. Do you work better right after school or after you've eaten dinner? Are you more productive in 90-minute blocks or half-hour spurts? Find a schedule that works for you, and stick to it.
+    \item ake notes. Taking notes will not only keep you more engaged during class, but will also help you narrow down what you need to study when exam time rolls around. It's much easier to reread your notes than to reread your entire textbook!
+    \subsection{USING OTHER BULLETS}
+    \item[$\Theta$] Study. This one might be obvious, but did you know that there's a right and a wrong way to study? Review your material several days ahead of time, in small chunks, and in different manners (for example, write flashcards one day and take practice tests the next). In other words, don't cram. 
+    \item[$$\#$$]  Manage your study space. Find a place that will maximize your productivity. Look for places away from the television and other distractions. Whether it's your local library or just the desk in your bedroom, set aside a study space that you'll want to spend time in. 
+    \item [$\ast$]Find a study group. Sitting down with a group of people who are learning the same things as you is a great way to go over confusing class material or prepare for a big test. You can quiz each other, reteach material, and make sure that everyone is on the same page. After all, teaching someone else is the best way to learn. 
+    \item [$-$] Find a study group. Sitting down with a group of people who are learning the same things as you is a great way to go over confusing class material or prepare for a big test. You can quiz each other, reteach material, and make sure that everyone is on the same page. After all, teaching someone else is the best way to learn. 
+\section{DESCRIPTION}
+The description list is least known. It is used when you need to explain
+terms or notations.
+the description list, which is neither bulleted nor numbered
+\begin{description}
+\item [Chemistry] the study of behavior of elements and compounds
+\item[History] the study of past
+\item[Geology] the study of the solid Earth
+\end{description}
+\section{NESTED LISTS}
+\begin{enumerate}
+    \item Get Organized.........................
+    \item Puncutality. ... .................
+\begin{itemize}
+    \item Set a schedule.
+    \item Take notes.
+    \item eating a healthy diet.
+    \item getting regular exercise.
+    \item not smoking.
+    \item staying at a healthy weight.
+     \item limiting alcohol
+\end{itemize}
+    \item Be Cool and Be Happy Forever................
+    \item The Study Of...................
+\begin{description}
+    \item [Anthropology ] the study of the origin and development of human societies and cultures. 
+    \item  [Social ] it is the study of History
+\end{description}
+    \item Brushing twice a day....................
+    \item bath twice in a day...................
+\end{enumerate}
+\section{PARAGRAPH}
+Acomputer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. A computer system is a "complete" computer that includes the hardware, operating system (main software), and peripheral equipment needed and used for "full" operation. This term may also refer to a group of computers that are linked and function together, such as a computer network or computer cluster. \par A broad range of industrial and consumer products use computers as control systems. Simple special-purpose devices like microwave ovens and remote controls are included, as are factory devices like industrial robots and computer-aided design, as well as general-purpose devices like personal computers and mobile devices like smartphones. Computers power the Internet, which links billions of other computers and users.
+\section{\LaTeX TABLE}
+\begin{itemize}
+    \item The tables in Latex are created with a combination of
+    a tabular environment and the table environment. The tabular
+     environments contain the actual content of the table, while
+     others include the caption.
+   \item How to create and customize tables like: changing size/spacing,
+   combining cells, applying colour to rows or cells, and so forth.
+   \item The tabular environment is the default LATEX method to create
+     tables. You must specify a parameter to this environment; here
+       we use {c c c} which tells LaTeX that there are three colur.
+\end{itemize}
+\begin{table}
+    \centering
+    %\caption{Friends}
+    \begin{tabular}{|c|c|c|c|c|} \hline
+       S.NO  & Name & Age & Branch & Year  \\ \hline
+        01   & Uday Kumar Naik & 19& CSE & E1 \\ \hline 
+        02  & Pavan kalyan & 18& CSE & E1 \\ \hline 
+        03   & Shashi Kumar& 17& CSE & E1 \\ \hline 
+        04   & Sai Kumar & 19& CSE & E1 \\ \hline 
+        05   & kalyan Kumar  & 19& CSE & E1 \\ \hline 
+        06   & Nithin Naik & 18& ME & E1 \\ \hline 
+        07   & Shiva Shankar & 18& ME& E1 \\ \hline 
+        07   & Goa Chari & 17& ECE & E1 \\ \hline 
+    \end{tabular}
+    \caption{Friends}
+    %label{tab:my_label}
+\end{table}
+\subsection{COMBINING ROWS AND COLOUMN}
+\begin{itemize}
+    \item [$\%$] Rows and columns can be merged to create larger table cells.To combine rows you need to add
+the multirow package to your document preamble:
+\end{itemize}
+\begin{tabular}{ |c|c|c| } \hline
+\multicolumn{3}{|c|}{cell numbers}\\ \hline
+cell4 & cell5 & cell6\\ \hline
+cell1&cell2&cell3\\ \hline
+\multirow{2}{6em}{cellnumbers} & cell2 &cell3\\
+&cell5&cell6\\ \hline
+\end{tabular}
+\subsubsection{Another Table}
+\begin{table}[]
+    %\centering
+    \begin{tabular}{|c|c|c|c|} \hline
+      \multicolumn{2}{|c|}{Uday Naik}  & SHIVA & CHARI \\ \hline
+      \multirow{2}{6em}{PAVAN} & KARTHIK & Nithin & Sai \\ 
+        &RAMU & Kalyan & Shashi\\ \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\end{document}
