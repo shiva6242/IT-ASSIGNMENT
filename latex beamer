@@ -1,0 +1,120 @@
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{AnnArbor}
+ %\usetheme{CambridgeUS}
+% \usetheme{Antibes}
+
+% Title page details: 
+\title{MY FIRST LATEX PRESENTATION}
+ \subtitle{ON BEAMER}
+\author{UDAYKUMARNAIK MUDAVATH}
+ \institute{RGUKT BASAR}
+
+
+\date{29-07-2022}
+
+% \logo{
+% \includegraphics[width=3cm]{logo.jpg}
+% }
+
+% Logo only on title page
+% \titlegraphic{
+%     \includegraphics[width=2cm]{logo.jpg}
+% }
+
+% Modify footer text: 
+% \title[Center text]{Your First \LaTeX{} Presentation}
+% \subtitle{My-subtitle}
+% \author[Left text]{latex-beamer.com}
+% \date[Right text]{\today}
+
+% Define a counter
+% \newcounter{currentenumi}
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% % Outline frame
+\begin{frame}{Outline}
+\begin{itemize}
+    \item ABOUT THE AUTHOR
+    \item TEXT AND IMAGE IN A BEAMER
+    \item MY FIRST TABLE
+    \item INSERTING THE IMAGE 
+\end{itemize}
+
+ \end{frame}
+
+
+
+
+\begin{frame}{ABOUT THE AUTHOR}
+     \begin{block}{PERSONAL DETAILS}
+   NAME :        ALLI SHIVA VARDHAN \\
+   FATHER NAME:  ALLI RAJENDAR \\
+   MOTHER NAME:  ALLI RAJITHA 
+     \end{block}
+     \begin{alertblock}{ADDRESS}
+      CHELPUR VILLLAGE \\
+     HUZURABAD MANDAL \\
+     KARIMNAGAR DISTRICT\\
+     TELANGANA STATE 
+        
+     \end{alertblock}
+     \begin{exampleblock}{ACADEMIC DETAILS}       
+     
+
+    Classroom :E1 CSE 022-C2 \\
+    Semester  :E1 - S2 \\
+    Branch    : Computer Science & Engineering
+
+
+    \end{exampleblock}
+\end{frame}
+\begin{frame}{TEXT AND IMAGE IN A BEAMER}
+    \begin{columns}
+     \column{0.3\textwidth}
+        The primary objective of establishing RGUKT is to provide high quality educational opportunities for the rural youth of the state.
+     \column{0.6\textwidth}
+         \begin{figure}
+         \centering
+        \includegraphics[width=\textwidth]{rgukt.jpg}
+        \caption{RGUKT-Basar Entrance Gate}
+        \end{figure}
+     \end{columns}
+ \end{frame}
+
+ \begin{frame}{MY FIRST TABLE}
+ \centering
+ \begin{tabular}{|c|l|r|}
+ \hline
+     NAME & ID NUMBER & CGPA \\ 
+ \hline
+     UDAY KUMAR NAIK & B192476 & 8.4\\ 
+ \hline
+     PAVAN KALYAN & B191200 & 9.6\\ 
+\hline
+     SHASHI KUMAR & B191916 & 9.5\\
+\hline
+     SAI KUMAR & B192478 & 9.3 \\
+\hline
+
+ \end{tabular}
+\end{frame}
+
+\begin{frame}{INSERTING THE IMAGE}
+\begin{figure}
+         \centering
+        \includegraphics[width=\textwidth]{ vc_amazon.jpeg}
+        \caption{Newly Appointed VC and Director Sir }
+        \end{figure}
+\end{frame}
+
+
+
+\end{document}
