@@ -1,0 +1,558 @@
+
+\documentclass[a4paper]{article}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{multirow}
+\begin{document}
+\begin{center}
+    \begin{LARGE}
+    MY FIRST \LaTeX DOCUMENT
+    \end{LARGE}
+\end{center} \hline
+\section{ENUMERATE}
+\begin{enumerate}
+    \item Get Organized. Making a plan for what you're going to do and when you're going to do it will make sure you're always ahead of the curve - literally. 
+    \item Don't multitask. Studies have shown that multitasking is physically impossible. 
+    \item Divide it up. Studying isn't fun to begin with, and forcing yourself through a study marathon will only make it worse. Dividing your work into manageable chunks and rewarding yourself when you finish each chunk will make studying (more) fun.
+\end{enumerate}
+\section{ITEMIZE}
+\begin{itemize}
+    \item Sleep. Don't underestimate the importance of those eight hours of zzz's every night! Getting a good night's rest will sharpen your focus and improve your working memory.
+    \item Set a schedule. Do you work better right after school or after you've eaten dinner? Are you more productive in 90-minute blocks or half-hour spurts? Find a schedule that works for you, and stick to it.
+    \item ake notes. Taking notes will not only keep you more engaged during class, but will also help you narrow down what you need to study when exam time rolls around. It's much easier to reread your notes than to reread your entire textbook!
+    \subsection{USING OTHER BULLETS}
+    \item[$\Theta$] Study. This one might be obvious, but did you know that there's a right and a wrong way to study? Review your material several days ahead of time, in small chunks, and in different manners (for example, write flashcards one day and take practice tests the next). In other words, don't cram. 
+    \item[$$\#$$]  Manage your study space. Find a place that will maximize your productivity. Look for places away from the television and other distractions. Whether it's your local library or just the desk in your bedroom, set aside a study space that you'll want to spend time in. 
+    \item [$\ast$]Find a study group. Sitting down with a group of people who are learning the same things as you is a great way to go over confusing class material or prepare for a big test. You can quiz each other, reteach material, and make sure that everyone is on the same page. After all, teaching someone else is the best way to learn. 
+    \item [$-$] Find a study group. Sitting down with a group of people who are learning the same things as you is a great way to go over confusing class material or prepare for a big test. You can quiz each other, reteach material, and make sure that everyone is on the same page. After all, teaching someone else is the best way to learn. 
+\section{DESCRIPTION}
+The description list is least known. It is used when you need to explain
+terms or notations.
+the description list, which is neither bulleted nor numbered
+\begin{description}
+\item [Chemistry] the study of behavior of elements and compounds
+\item[History] the study of past
+\item[Geology] the study of the solid Earth
+\end{description}
+\section{NESTED LISTS}
+\begin{enumerate}
+    \item Get Organized.........................
+    \item Puncutality. ... .................
+\begin{itemize}
+    \item Set a schedule.
+    \item Take notes.
+    \item eating a healthy diet.
+    \item getting regular exercise.
+    \item not smoking.
+    \item staying at a healthy weight.
+     \item limiting alcohol
+\end{itemize}
+    \item Be Cool and Be Happy Forever................
+    \item The Study Of...................
+\begin{description}
+    \item [Anthropology ] the study of the origin and development of human societies and cultures. 
+    \item  [Social ] it is the study of History
+\end{description}
+    \item Brushing twice a day....................
+    \item bath twice in a day...................
+\end{enumerate}
+\section{PARAGRAPH}
+Acomputer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. A computer system is a "complete" computer that includes the hardware, operating system (main software), and peripheral equipment needed and used for "full" operation. This term may also refer to a group of computers that are linked and function together, such as a computer network or computer cluster. \par A broad range of industrial and consumer products use computers as control systems. Simple special-purpose devices like microwave ovens and remote controls are included, as are factory devices like industrial robots and computer-aided design, as well as general-purpose devices like personal computers and mobile devices like smartphones. Computers power the Internet, which links billions of other computers and users.
+\section{\LaTeX TABLE}
+\begin{itemize}
+    \item The tables in Latex are created with a combination of
+    a tabular environment and the table environment. The tabular
+     environments contain the actual content of the table, while
+     others include the caption.
+   \item How to create and customize tables like: changing size/spacing,
+   combining cells, applying colour to rows or cells, and so forth.
+   \item The tabular environment is the default LATEX method to create
+     tables. You must specify a parameter to this environment; here
+       we use {c c c} which tells LaTeX that there are three colur.
+\end{itemize}
+\begin{table}
+    \centering
+    %\caption{Friends}
+    \begin{tabular}{|c|c|c|c|c|} \hline
+       S.NO  & Name & Age & Branch & Year  \\ \hline
+        01   & Uday Kumar Naik & 19& CSE & E1 \\ \hline 
+        02  & Pavan kalyan & 18& CSE & E1 \\ \hline 
+        03   & Shashi Kumar& 17& CSE & E1 \\ \hline 
+        04   & Sai Kumar & 19& CSE & E1 \\ \hline 
+        05   & kalyan Kumar  & 19& CSE & E1 \\ \hline 
+        06   & Nithin Naik & 18& ME & E1 \\ \hline 
+        07   & Shiva Shankar & 18& ME& E1 \\ \hline 
+        07   & Goa Chari & 17& ECE & E1 \\ \hline 
+    \end{tabular}
+    \caption{Friends}
+    %label{tab:my_label}
+\end{table}
+\subsection{COMBINING ROWS AND COLOUMN}
+\begin{itemize}
+    \item [$\%$] Rows and columns can be merged to create larger table cells.To combine rows you need to add
+the multirow package to your document preamble:
+\end{itemize}
+\begin{tabular}{ |c|c|c| } \hline
+\multicolumn{3}{|c|}{cell numbers}\\ \hline
+cell4 & cell5 & cell6\\ \hline
+cell1&cell2&cell3\\ \hline
+\multirow{2}{6em}{cellnumbers} & cell2 &cell3\\
+&cell5&cell6\\ \hline
+\end{tabular}
+\subsubsection{Another Table}
+\begin{table}[]
+    %\centering
+    \begin{tabular}{|c|c|c|c|} \hline
+      \multicolumn{2}{|c|}{Uday Naik}  & SHIVA & CHARI \\ \hline
+      \multirow{2}{6em}{PAVAN} & KARTHIK & Nithin & Sai \\ 
+        &RAMU & Kalyan & Shashi\\ \hline
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\end{document}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+latex/Latex .Article Document at main · Mudavath1234/latex
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@Mudavath1234
+Mudavath1234 /
+latex
+Public
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+latex/echo "# latex" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https:/github.com/Mudavath1234/Latex Assignment
+@Mudavath1234
+Mudavath1234 Create Latex Assignment
+Latest commit e96ef47 2 days ago
+History
+1 contributor
+400 lines (355 sloc) 14.2 KB
+\documentclass{knittingpattern}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+%\usepackage{graphicx}
+%\fancypagestyle{sixthpage}
+\usepackage{xskak}
+\usepackage{graphicx}
+\usepackage{chemfig}
+\usepackage[siunitx]{circuitikz}
+%\usepackage{graphicx}
+%\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usetikzlibrary{automata, positioning,arrows}
+\usepackage{tikz}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{modiagram}
+\definecolor{colour0}{HTML}{000000}
+\definecolor{colour1}{HTML}{FBC02D}
+\definecolor{colour2}{HTML}{C39BD3}
+%\definecolor{colour3}{HTML}{2ECC71}GREEN
+\definecolor{colour3}{HTML}{82E0AA}
+\definecolor{colour4}{HTML}{D2B4DE}
+\definecolor{colour5}{HTML}{FFCC33}
+\definecolor{colour6}{HTML}{CC99CC}
+\definecolor{colour7}{HTML}{9966FF}
+\definecolor{colour8}{HTML}{66FF99}
+\definecolor{colour9}{HTML}{FFCC33}
+
+\begin{document}
+
+\begin{center}
+\textbf{\color{blue}{RAJIV GANDHI UNIVERSITY OF KNOWLEDGE TECHNOLOGIES, }}\\
+\textup{\color{blue}{Basar(village \& Mandal),nirmal(District),telangana state-$504107$}}\\
+
+\textbf{\color{red}{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}}\\
+\end{center}
+\rule{\textwidth}{.05pt}
+\begin{center}
+\large\bf LATEX Assignment-1
+
+\end{center}
+\section*{}
+
+{\LARGE \bf{ Name : Mr.A.Shiva vardhan}}\\
+\\
+{\LARGE \bf{ID : B191925}\\
+\\
+{\LARGE \bf{ Class : CSE-C2(022)}}\\
+\\
+
+\textbf{\huge Contents}
+\section{ Kintting Patterns}
+\section{ chess Notation}
+\section{chemistry}
+\subsection{ chemical formulae}
+\subsection{ Molecular Orbital Diagrams}
+\section{Electical Circuits}
+\section{Typesetting exams}
+\begin{large}
+This is an assignment. We are not sharing the source code for this document- you’ll have to look up the titles of each section (Overleaf is a great source), and try to replicate the features we
+demonstrate the best you can.\\
+\end{large}
+\begin{large}
+Don’t forget to give yours ID when you submit the .file!\\
+\end{large}
+\begin{large}
+We recommend you attempt this assignment in the online Overleaf editor for the most
+convenient workflow. The MacTeX distribution has all packages installed.
+\end{large}
+\begin{large}
+Some of the packages might give you troubles in your offline LATEX distribution, if so, you can
+switch over to Overleaf.\\
+\end{large}
+\fbox{\noindent\fbox{%
+    \parbox{\textwidth}{\Large\textbf{\hfil your submission should contain a zip containing}
+\par1. Your source code (.tex file, .bib file) and supporting images, if any. The .tex file must be
+named “ .tex”
+\par2.The pdf file, whose name must be “ .pdf”
+\par 3.The zip should be named “ .zip” Consider of your IIIT-B roll number and the assignment
+number.\par
+4.Same code should be in your Git Hub Account
+5.B191619.zip file need to be upload into (Server/Git-Hub rguktb-cse/your course Will be
+specify in your lab)
+}
+}}\\\\
+\newpage
+
+\textbf{\huge 1.Knitting patterns}\\
+\begin{large}
+This class provides a very convenient way to introduce boxed diagrams. We are thus going to use our stock image a few more
+times. Also, it has a few features to make knitting instructions more readable, however, we can adapt them to make prettier
+documents for our purposes as well.
+\end{large}
+\begin{figure}[h]
+    \centering
+    \setlength{\fboxsep}{15pt}
+    \setlength{\fboxrule}{2pt}
+\fbox{\includegraphics[scale=0.9]{2.png}}
+\end{figure}
+\important{colour0}{colour5}{We have a way of highlighting important text, or as was originally intended, important
+instructions. Feel free to choose whatever background and border colour you like when
+you replicate these features, but try to replicate the dimensions as well as you can.}
+\begin{pattern}{colour7}{colour3}
+\textbf{Course}&\textbf{Credits}\\
+Introduction to Computer Programming&6\\
+Abstraction and Paradigms in Programming&6\\
+Abstractions and Paradigms in Programming Lab&3\\
+Data Structure and Algorithms&6\\
+Software Systems Lab &8\\
+\end{pattern}
+\important{colour0}{colour4}{\underline{Note}
+
+This is a note. The above feature was introduced to typeset a sequence of knitting instructions.
+The first column is for the instruction, the second for the number of stitches. But hey, it looks
+cool}
+\begin{minipage}{0.1\textwidth}
+\begin{figure}[H]
+\setlength{\fboxsep}{17pt}
+\setlength{\fboxrule}{1.5pt}
+\includegraphics[width=7.5cm,height=6.5cm]{2.png}
+\end{figure}
+\end{minipage} \hfill
+\begin{minipage}{0.5\textwidth}
+Look at the adjoining graph. Yes, you’ve seen it before. This \\ time, it is side by side with a paragraph! And there’s a beautiful box around it! By default, this will be a quarter of the
+width of the page. If you follow the hint that is the title of this section, you won’t have to type in cumbersome code to fit in images. Also, have you noticed that the pages are much
+wider? A lot of it will be clear when you read up on the knittingpatterns class. It is already available with the MacTeX distributions, and of course, online on Overleaf. If your distribution does not offer it, download it from here and copy the .cls file to the folder/directory your code is in. See the point where stuff becomes exponentially harder to do without LATEX? We daresay the rest of this assignment crosses that point. Good luck!
+
+\end{minipage}
+\clearpage
+\section*{}
+\section{\textbf{Chess Notation}}
+\begin{center}
+\textbf{Adolf Anderssen - Lionel Kieseritzky}\\
+London, 1851\\
+\newchessgame
+\setchessboard{boardfontsize=18}
+\chessboard[setfen=rnb1k1nr/p2p1ppp/3B/1pbN1N1P/4P1P/3P1Q/PqP/R4kR,showmover=false]\\
+\end{center}
+In this position, Black played 18. . .\symbishop xg1, taking the rook. Had he opted for 18. . . \symqueen xa1, he would be better, but still in
+trouble. However, his choice allowed for a spectacular finish. 19 e5! Blunting the Queen’s protection of g7. 19. . . \symqueen xa1+.
+What else? The rook is en-prise. 20 \symking e2 \symknight a6. This covers the c7 square, as White was threatening Mate in 2, example like 20. . . h6 21 \symknight xg7+ \symking d8 22 \symbishop c7\#. 21 \symknight xg7+ \symking d8 22 \symqueen f6+!
+\begin{center}
+\newchessgame
+\setchessboard{boardfontsize=18}
+\chessboard[setfen=r1bk2nr/p2p1pNp/n2B1Q/1p1NP2P/6P/3P/P1P1K/q5b,showmover=false]
+\end{center}
+A brilliant Queen sacrifice to deflect the Knight on g8 that protects e7 22. . . \symknight xf6 23 \symbishop e7\#
+\begin{center}
+    \newchessgame
+    \setchessboard{boardfontsize=18}
+\chessboard[setfen=r1bk3r/p2pBpNp/n4n/1p1NP2P/6P/3P/P1P1K/q5b,showmover=false]
+\end{center}
+Chess enthusiasts will have immediately recognised this as The Immortal Game. Try typesetting this!\\\\
+
+\textbf{\huge 3 Chemistry}
+\subsection{ Chemical Formulae}
+
+
+\chemfig{*6((-Cl)- =(*6(-N=-=(-HN-[:30](-[:90])-[:330]-[:30]-[:330]-[:30]N(-[:90]-[:30]-[:330]OH)-[:330]-[:30])-))-= -=)}
+\section*{}
+\\\ This is the molecule hydroxychloroquine, that recently shot to fame as a proposed cure for COVID-19. Please draw it. This
+is a helpful Overleaf tutorial to help you get started.\\
+\textbf{\large 3.2 Molecular Orbital Diagrams}
+
+\begin{MOdiagram}[labels,names]
+
+ \atom[N]{left}{
+   2p = {0;up,up,up}
+ }
+ \atom[O]{right}{
+   2p = {2;pair,up,up}
+ }
+ \molecule[NO]{
+   2pMO  = {1.8,.4;pair,pair,pair,up} 
+ }
+ 
+\end{MOdiagram}
+\\
+\\You’ve probably mugged this up for JEE, and definitely learnt more about this in CH 107.
+Draw the above molecular orbital diagram for nitric oxide. Again, exact dimensions needn’t match.\\\\
+\newpage
+\textbf{\huge 4 Electrical Circuits}\\
+
+\begin{tikzpicture}[scale=2]
+  \draw[color=black]
+    (0,0) to [short,o-] (6,0){} 
+    (0,1) node[]{\large{\textbf{$V_o$ sin(wt)}}}
+    (4,0) node[ground]{} node[circ](3,0){}
+    (3.3,1.77) node[]{\small{$V_C$$_E$}}
+    (0,1.5) to [C, l=$C_1$, *-] (1.5,1.5)
+    to node[short]{}(2.6,1.5)
+    (2.2,1.6) to [R, l=$R_1$, -] (2.2,3)
+    -| (3,3)
+    (1.6,1.5) node[]{\small{\ }}
+    (3.3,0.5) node[]{\small{$V_E$}}
+    (2.5,1) node[]{\small{$V_B$}}
+    (2.5,1.7) node[]{\small{$i_B$}}
+    (3,0) to [R,l=$R_E$,*-] (3,1)
+    to [Tnpn,n=npn1] (3,2)
+    (5.6,1.7) node[]{\small{$V_C$$_C$}}
+    (4.4,1.3) node[]{\small{$V_O$$_U$$_T$}}
+    (4,0) to [C, l=$C_2$, *-] (4, 1)--(3,1)
+    (2.2,0) to [R, l=$R_2$ , - ] (2.2,2)
+    (3,2) to [R, l=$R_L$ , - ](3,3)
+    to [short,*-o](6,3) 
+    (6.1,0.2) node[]{\small{$-$}}
+    (6.1,2.8) node[]{\small{$+$}}
+    (-0.1,1.38) node[]{\small{$+$}}
+    (-0.1,0.26) node[]{\small{$-$}}
+    (2.4,1.3) node[]{\small{$+$}}
+    (3.26,0.3) node[]{\small{$-$}}
+    (3.26,0.7) node[]{\small{$+$}}
+    (3.26, 1.3) node[]{\small{$-$}}
+    (3.26, 1.58) node[]{\small{$+$}}
+    (2.4,0.7) node[]{\small{$-$}}
+    (6.1,1.9) node[]{\small{$+$}}
+    (3,2)to [short,*-o](6,2)
+    (5,0)to [short,*-o](6,0) 
+    ;
+\end{tikzpicture}
+
+\\\\If you recall JEE Physics, this is a circuit diagram of an npn transistor used as an amplifier. Try your best to match this
+circuit. We have used the American voltages convention. It is alright if you can’t get the dimensions to match. What is
+important is that you know how to use circuitikz to draw circuits with the components used above, and mark voltages and
+currents\\
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{MATHS}
+\rhead{IIITB\#}
+\chead{ASSIGNMENT}
+\textbf{\huge 5  Typesetting exams}\\
+\begin{large}
+\par Congratulations, you’re appointed as a TA for that course you loved last year. The prof, however, is busy with his research,
+and wants you to typeset an exam. LATEX, with its exam class can help you do just that!\\\par
+\par You’ll need to make a separate document, if you want to attempt this task. Your job is to imitate the exam.pdf that we
+have provided.\par
+\end{large}
+
+\newpage
+\textbf{\LARGE problem.1 show that there exists no nontrival unramified extensions of  Q }\\
+\begin{LARGE}
+ 
+\textbf{solution:} if k/Q is a nontrivial number field, then $|disck|>1$.but then disk $K$ has a prime factor so that some prime ramifies in K.\\\\
+\textbf{\LARGE 2.complete the following :}\\
+\end{LARGE}
+\begin{large}
+
+\textbf{(a) How does one prove a cotheorem $\mathord{?}$}\\
+\textbf{(b) compute $\int{cosx} dx $ .}\\
+\textbf{(c) How does one square}
+$
+\begin{pmatrix}
+a & b\\
+c & d
+
+\end{pmatrix}$.\\
+
+\end{large}
+\begin{LARGE}
+ \textbf{solutions:}\\
+ \end{LARGE}
+ \begin{LARGE}
+\textbf{(a) Use rollaries.}\\
+ \textbf{ (b) We have}\\
+ \textbf{ $$\int{cosx} dx = sinx +c $$}
+ \textbf{ We can check (1):}
+ \textbf{$$ d/dx(sinx+c)=cosx $$}
+ \textbf{ (c) This is routine.}\\
+ 
+ \end{LARGE}
+ \begin{huge}
+ \textbf{\LARGE 3.Prove that $\sqrt{2}$ is irrational}
+ \end{huge}
+ \begin{LARGE}
+ \textbf{proof:}
+ Assume that $\sqrt{2}=a/b$,where a,b E Z.without loss of generality,we may assume gcd(a,b)=1.then we have
+ \textbf{$$\sqrt{2}= \frac{a}{b}$$}\\
+ \textbf{{$$\sqrt{2}^2={({\frac{a}{b}})^2}$$   $$ (1) $$}}\\
+ \textbf{$${2}=\frac{a^2}{b^2} $$}\\
+ \textbf{$${a^2}=2{b^2}$$}\\
+ but then from(3), we know that ${a^2}$ is even so that a is even.but then we must have
+ $$2{a^2}={b^2}$$
+ so that ${b^2}$ is even,implying is even.but the $gcd(a,b)>=2$,a contradiction
+ 
+\end{LARGE}
+(\,b)\,
+\begin{tikzpicture}
+\node[state] (q1) {{$q_a$}};
+\node[state, right of=q1,xshift=2cm] (q2) {$q_b$};
+\node[state, accepting] at (3.1, -3)(q3) {$q_c$} ;
+\draw 
+(q1) edge[bend left,above] node{\tt 0}(q2)
+(q2) edge[loop right] node{1}(q2)
+(q2) edge[bend left, above] node{$\epsilon$} (q1)
+(q3) edge[bend left, below] node{$\epsilon$} (q2)
+(q3) edge[bend right, below] node{0, 1} (q2)
+(q3) edge[below,  left=0.3] node{1} (q1);
+
+\end{tikzpicture}
+\section*{4. Solving puzzle\#1}
+\begin{large}
+In class, we did three puzzles, the first of which is equivalent to
+finite automata. In general, a puzzle of this type has a frame like this (but possibly
+with more/fewer squares and different colors):
+
+\vspace{0.5cm}
+
+\centering
+\begin{tikzpicture}
+
+\filldraw[green](-0.4,2.4)--(0,2)--(4,2)--(4,2.4);
+\filldraw[green](4,0)--(4,-0.4)--(8.4,-0.4)--(8,0);
+\filldraw[blue](4,2)--(4,2.4)--(8.4,2.4)--(8,2);
+\filldraw[blue](-0.4,2.4)--(0,2)--(0,0)--(4,0)--(4,-0.4)--(-0.4,-0.4)--(-0.4,2.4);
+\filldraw[red](8,0)--(8,2)--(8.4,2.4)--(8.4,-0.4);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- (0,0);
+\draw (2,2) -- (4,2) -- (4,0) -- (2,0);
+\draw (4,2) -- (6,2) -- (6,0) -- (4,0);
+\draw (6,2) -- (8,2) -- (8,0) --(6,0);
+\draw (0,0) -- (-0.4,-0.4);
+\draw (0,2) -- (-0.4,2.4);
+\draw (-0.4,2.4) -- (-0.4,-0.4);
+\draw (2,2) -- (2,2.4);
+\draw (4,2) -- (4,2.4);
+\draw (6,2) -- (6,2.4);
+\draw (8,2) -- (8.4,2.4);
+\draw(-0.4,2.4) -- (8.4,2.4);
+\draw (2,0) -- (2,-0.4);
+\draw (4,0) -- (4,-0.4);
+\draw (6,0) --( 6,-0.4); 
+\draw (8,0) -- (8.4,-0.4);
+\draw (-0.4,-0.4) -- (8.4 ,-0.4);
+\draw (8.4,-0.4) --(8.4,2.4);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+
+And a finite set of tiles like this (but possibly with more/fewer tiles and difent
+colors)
+
+\vspace{0.5cm}
+
+\begin{tikzpicture}
+
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- (0,0);
+
+\filldraw[blue] (0,0) -- (2,0) -- (0,2) ;
+\filldraw[blue] (0,0) -- (2,0) -- (2,2) ;
+\filldraw[green] (0,2) -- (1,1) -- (2,2);
+\draw (0,0) -- (2,2);
+\draw (2,0) -- (0,2);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- (0,0);
+
+\draw (2.2,0) -- (2.2,2) --(4.2 ,2) -- (4.2,0)--(2.2,0)  ;
+\filldraw[blue] (2.2,0) -- (2.2,2) --(4.2,0) ;
+\filldraw[yellow](3.2,1)--(4.2,0)--(4.2,2);
+\filldraw[green](3.2,1)--(2.2,2)--(4.2,2);
+\draw(2.2,0)--(2.2,2)--(4.2,2)--(4.2,0)--(2.2,0);
+\draw (4.2,0)-- (2.2,2);
+\draw(2.2,0)--(4.2,2);
+
+\draw (4.4,0)-- (4.4,2) -- (6.4,2) -- (6.4,0)--(4.4,0)--(6.4,2) ;
+\draw (6.4,0)-- (4.4,2);
+\filldraw[blue] (4.4,2) -- (5.4,1) --(6.4,2) ;
+\filldraw[yellow](4.4,0)--(5.4,1)--(4.4,2);
+\filldraw[green](4.4,0)--(5.4,1)--(6.4,0);
+\filldraw[red](6.4,2)--(5.4,1)--(6.4,0);
+\draw (4.4,0)-- (4.4,2) -- (6.4,2) -- (6.4,0)--(4.4,0)--(6.4,2) ;
+\draw (6.4,0)-- (4.4,2);
+
+
+
+\draw (6.6,0)-- (6.6,2) -- (8.6,2)-- (8.6,0)--(6.6,0)--(8.6,2) ;
+\draw (8.6,0) --((6.6,2);
+\filldraw[blue] (6.6,2) -- (7.6,1) --(8.6,2) ;
+\filldraw[red](8.6,0)--(7.6,1)--(8.6,2);
+\filldraw[green](6.6,0)--(7.6,1)--(8.6,0);
+\filldraw[red](6.6,2)--(7.6,1)--(6.6,0);
+
+\draw (6.6,0)-- (6.6,2) -- (8.6,2)-- (8.6,0)--(6.6,0)--(8.6,2) ;
+\draw (8.6,0) --((6.6,2);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+
+The tiles must be arranged so that adjacent areas have matching colors. There is an
+unlimited number of copies of each tile.
+\vspace{0.1cm}\flushleft
+(a) Show how every puzzle of this type can be converted into a finite automaton \textit{M}and a string w such that \textit{M}accepts \textit{w} if and only if the puzzle has a solution.
+\flushleft
+(b) Apply your construction to the above instance.\\
+(c) Briefly describe how this gives an \textit{O(n)} algorithm for solving puzzles of this
+type.
+\end{large}
+
+
+\end{document}
