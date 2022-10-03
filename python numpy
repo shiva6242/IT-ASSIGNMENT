@@ -1,0 +1,86 @@
+
+x = 3
+print(x)
+
+#List
+#Dictionary
+#Tuple
+#Set
+x  = [[2], [3], [4]]
+y = [[5, 6, 7], [9, 10, 11]]
+z = x + y
+print(z)
+import numpy as np
+a = np.array(x)
+b = np.array(y)
+# print(type(a))
+print(a.shape)
+print(b.shape)
+x = [[[1,2, 3]],[[4,5,6]],[[7,8,9]]]
+a = np.array(x)
+print(a.shape)
+print(a)
+x = [[1,2,3],[4,5,6], [7,8,9]]
+y = [[1,2], [3,4], [5,6]]
+a = np.array(x)
+b = np.array(y)
+print(a)
+print(b)
+print(a[1, 1:])
+#addition
+#subtraction
+#divison
+#multiplication - elementwis / dot
+# c = a * a
+c = np.dot(a, b)
+print(c)
+print(c.T)
+x = np.array([[1,2],[3,4]]) 
+y = np.linalg.inv(x) 
+print(y)
+a = np.eye(8)
+print(a)
+# Matplotlib
+- Data visualization
+    - pie chart : results : e : 5 , a : 10, b: 40, c:40, d:3, p:1, r:1
+    - bar graph : 2017:65 2018:75, 2019: 80, 2020: 70, 2021: 90, 
+    - histogram : random weight 35 between 65 for 60 students
+    - scatter plot / line chart: sine function, weight grade, height weight
+import matplotlib.pyplot as plt
+grades = {"e" : 5 , "a" : 10, "b": 40, "c":40, "d":3, "p":1, "r":1}
+print(grades.keys())
+print(grades.values())
+fig = plt.figure(figsize=(6,6))
+plt.pie(x = grades.values(),
+        labels = grades.keys(),
+        colors = ['green', 'red', 'blue', 'orange', 'pink', 'black', 'violet'],
+        explode = [0.5, 0.4, 0.3, 0.2, 0.1, 0.1, 0.1],
+        shadow = True,
+        labeldistance = 1.1
+       )
+plt.title("Grades", y=-0.2)
+plt.legend()
+plt.show()
+fig.savefig("grade_pie.png")
+placement = {"2017":65, "2018":75, "2019": 80, "2020": 70, "2021": 90}
+fig = plt.figure(figsize=(6,6))
+plt.barh(y = list(placement.keys()), 
+        width = placement.values(),
+        color = ['red', 'blue', 'pink', 'green', 'yellow'],
+        edgecolor = ['black','black','black','black','black'],
+        linewidth=3,     
+       )
+plt.title("Placement percentage")
+# plt.legend()
+plt.show()
+weight = np.random.randint(low=35, high=66, size=60)
+weight
+fig = plt.figure(figsize=(6,6))
+plt.hist(x = weight,
+         bins = 12,
+        edgecolor = "black")
+plt.show()
+#Scatter plot
+
+#Genetrate randomw weights and heights for 60 students
+#Plor using: plt.plot()
